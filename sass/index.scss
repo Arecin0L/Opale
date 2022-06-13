@@ -1,2 +1,62 @@
 $fc: #157f86;
 $sc: #555d63;
+
+@mixin disp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh;
+    z-index: 1;
+}
+.nav{
+    display: none;
+}
+.navopen{
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 100;
+   
+}
+a{
+    text-decoration: none;
+        color: $fc;
+        font-family: 'Gentium Plus', serif;
+}
+
+@media screen and (min-width: 720px) {
+    .nav, .navopen{
+        @include disp;
+        flex-direction: row;
+        margin-right: 10vw;
+    }
+    .icon{
+        display: none;
+    }
+    .log, .about, .review{
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: $fc;
+        font-family: 'Gentium Plus', serif;
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+
+

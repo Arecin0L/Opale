@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2vh;
+  z-index: 1;
+}
+
+.nav {
+  display: none;
+}
+
+.navopen {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: #157f86;
+  font-family: 'Gentium Plus', serif;
+}
+
+@media screen and (min-width: 720px) {
+  .nav, .navopen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 10vw;
+  }
+  .icon {
+    display: none;
+  }
+  .log, .about, .review {
+    margin-right: 5vw;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #157f86;
+    font-family: 'Gentium Plus', serif;
+    font-size: 1.8em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
